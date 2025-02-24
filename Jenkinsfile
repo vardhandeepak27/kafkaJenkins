@@ -22,7 +22,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                bat 'java -jar target/kafka-demo-0.0.1-SNAPSHOT.jar &'
+                bat 'java -jar target/kafkaJenkins-0.0.1-SNAPSHOT.jar &'
             }
         }
 
