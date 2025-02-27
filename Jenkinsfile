@@ -29,7 +29,7 @@ pipeline {
         stage('Test API') {
             steps {
                 bat '''
-                    curl -X POST http://localhost:8086/send -H "Content-Type: application/json" -d "Hello from Jenkins"
+                    curl -X POST http://localhost:8090/send -H "Content-Type: application/json" -d "Hello from Jenkins"
                 '''
             }
         }
